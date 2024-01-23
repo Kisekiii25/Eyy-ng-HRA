@@ -179,11 +179,23 @@ a{
         font-size: smaller;
     }
     .homeContainer table tr td{
-        padding: 2px;
-        font-size: small;
+        padding: 7px;
+        font-size:medium;
     }
 }
+@media (max-width: 450px){
+    .homeContainer table tr td{
+        padding: 6px;
+        font-size: small;
 
+    }
+
+    .p{
+        text-wrap: wrap;
+        font-size: x-small;
+    }
+
+}
 @media (max-width: 390px){
     .homeContainer table tr td{
         padding: 2px;
@@ -191,12 +203,13 @@ a{
 
     }
 }
-
 @media (max-width: 360px){
     .homeContainer table tr td{
         padding: 0.5px;
-        font-size: smaller;
-        font-weight: 500;
-
+        font-size:x-small;
+    }
+    .p{
+        text-wrap: wrap;
+        font-size: xx-small;
     }
 }
