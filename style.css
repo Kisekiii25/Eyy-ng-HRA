@@ -179,7 +179,24 @@ a{
         font-size: smaller;
     }
     .homeContainer table tr td{
-        padding: 5px;
+        padding: 2px;
+        font-size: small;
+    }
+}
+
+@media (max-width: 390px){
+    .homeContainer table tr td{
+        padding: 2px;
+        font-size: smaller;
+
+    }
+}
+
+@media (max-width: 360px){
+    .homeContainer table tr td{
+        padding: 0.5px;
+        font-size: smaller;
+        font-weight: 500;
 
     }
 }
