@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('https://sits-pod37.demandware.net/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw55fd999b/images/large/100516_3.jpg?sw=1024&sh=1024&sm=fit');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*NAVIGATOR*/
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.750);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+.navLink ul{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+.navTitle{
+    display: inline-block;
+    font-family: "Rubik Burned", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+.navLink ul li{
+    margin-right: 20px;
+}
+.navLink ul a{
+    text-decoration: none;
+    color: white;
+    font-family: "Rubik Burned", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.3s;
+}
+a{
+    cursor: pointer;
+}
+/*Toggle Button*/
+.toggle-button{
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+}
+/*NAVIGATOR HOVER*/
+.navLink ul a:hover{
+    color: red;
+
+}
+/*HOME*/
+.homeContainer{
+    text-align: center;
+    margin: auto;
+
+}
+.homepicture{
+    border: 3.5px solid rgb(72, 72, 72);
+    margin: auto 24%;
+    text-align: center;
+}
+.homepicture a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+/*HOME HOVER*/
+.homepicture:hover{
+    border: 3.5px solid black;
+
+}
+/*DESCRIPTION*/
+.description{
+    margin: auto 24%;
+    border: 3.5px solid rgb(72, 72, 72);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/*Members*/
+.homeContainer table{
+    background: rgb(0, 0, 0);
+    margin: auto;
+}
+.homeContainer table tr .bold{
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+.homeContainer table tr .In{
+    color: rgb(255, 97, 97);
+}
+.homeContainer table tr{
+    background-color: rgb(106, 106, 106);
+}
+.homeContainer table tr td{
+    padding: 10px 30px 10px 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.homeContainer table tr td{
+    color:rgb(102, 184, 255);
+}
+.homeContainer table tr td a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/*Responsive for navbar*/
+@media (max-width: 666px) {
+    .toggle-button{
+        display: flex;
+    }
+    .navLink{
+       display: none;
+       width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        align-items: start;
+    }
+    .navLink ul{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .navLink ul li{
+        margin: 15px;
+        text-align: center;
+    }
+    .homeContainer table tr td{
+        padding: 15px;
+    }
+    .navLink.active{
+        display: flex;
+    }
+    
+}
+/*Responsive for table*/
+@media (max-width: 600px){
+    .homeContainer table tr td{
+        padding: 10px;
+
+    }
+}
+/*Responsive for body*/
+@media (max-width: 500px){
+    .homeContainer{
+        margin: auto;
+        align-items: center;
+    }
+    .p{
+        text-wrap: wrap;
+        font-size: smaller;
+    }
+    .homeContainer table tr td{
+        padding: 5px;
+
+    }
+}
